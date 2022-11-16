@@ -1,5 +1,6 @@
 using FindMaxNumber;
 using NUnit.Framework;
+using System;
 
 namespace FindMaxNumText
 {
@@ -10,22 +11,22 @@ namespace FindMaxNumText
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax()
         {
             //AAA - Arrange, Act, Assert
-            float result = maxNum.FindMaxInteger(6.8f, 6.2f, 6.3f);
-            Assert.AreEqual(6.8f, result);
+            string result = maxNum.FindMax("Apple", "Peach", "Banana");
+            Assert.AreEqual("Apple", result);
         }
 
         [Test]
         public void GivenMaxSecondNum_WhenAnalysed_ShouldReturnSecondMax()
         {
-            float result = maxNum.FindMaxInteger(6.2f, 6.8f, 6.3f);
-            Assert.AreEqual(6.8f, result);
+            string result = maxNum.FindMax("Banana", "Apple", "Peach");
+            Assert.AreEqual("Apple", result);
 
         }
         [Test]
         public void GivenMaxThirdNum_WhenAnalysed_ShouldReturnThirdMax()
         {
-            float result = maxNum.FindMaxInteger(6.2f, 6.3f, 6.8f);
-            Assert.AreEqual(6.8f, result);
+            string result = maxNum.FindMax("Peach", "Banana", "Apple");
+            Assert.AreEqual("Apple", result);
 
         }
     }
