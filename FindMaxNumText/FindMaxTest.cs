@@ -11,22 +11,22 @@ namespace FindMaxNumText
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax()
         {
             //AAA - Arrange, Act, Assert
-            string result = maxNum.FindMax("Apple", "Peach", "Banana");
-            Assert.AreEqual("Apple", result);
+            string result = maxNum.FindMax("Peach", "Apple", "Banana");
+            Assert.AreEqual("Peach", result);
         }
 
         [Test]
         public void GivenMaxSecondNum_WhenAnalysed_ShouldReturnSecondMax()
         {
-            string result = maxNum.FindMax("Banana", "Apple", "Peach");
-            Assert.AreEqual("Apple", result);
+            string result = maxNum.FindMax("Banana", "Peach", "Apple");
+            Assert.AreEqual("Peach", result);
 
         }
         [Test]
         public void GivenMaxThirdNum_WhenAnalysed_ShouldReturnThirdMax()
         {
-            string result = maxNum.FindMax("Peach", "Banana", "Apple");
-            Assert.AreEqual("Apple", result);
+            string result = maxNum.FindMax("Apple", "Banana", "Peach");
+            Assert.AreEqual("Peach", result);
 
         }
     }
