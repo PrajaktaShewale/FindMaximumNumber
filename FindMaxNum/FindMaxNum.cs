@@ -2,7 +2,7 @@
 {
     public class FindMaxNum
     {
-public int FindMaxInteger(int a, int b, int c)
+public float FindMaxInteger(float a, float b, float c)
         {
             if (a > b && a > c)
                 return a;

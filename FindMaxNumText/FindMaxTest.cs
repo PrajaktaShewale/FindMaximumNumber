@@ -10,22 +10,22 @@ namespace FindMaxNumText
         public void GivenMaxFirstNum_WhenAnalysed_ShouldReturnFirstMax()
         {
             //AAA - Arrange, Act, Assert
-            int result = maxNum.FindMaxInteger(15, 5, 10);
-            Assert.AreEqual(15, result);
+            float result = maxNum.FindMaxInteger(6.8f, 6.2f, 6.3f);
+            Assert.AreEqual(6.8f, result);
         }
 
         [Test]
         public void GivenMaxSecondNum_WhenAnalysed_ShouldReturnSecondMax()
         {
-            int result = maxNum.FindMaxInteger(5, 15, 10);
-            Assert.AreEqual(15, result);
+            float result = maxNum.FindMaxInteger(6.2f, 6.8f, 6.3f);
+            Assert.AreEqual(6.8f, result);
 
         }
         [Test]
         public void GivenMaxThirdNum_WhenAnalysed_ShouldReturnThirdMax()
         {
-            int result = maxNum.FindMaxInteger(5, 15, 10);
-            Assert.AreEqual(15, result);
+            float result = maxNum.FindMaxInteger(6.2f, 6.3f, 6.8f);
+            Assert.AreEqual(6.8f, result);
 
         }
     }
