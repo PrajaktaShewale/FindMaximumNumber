@@ -2,7 +2,7 @@
 {
     public class FindMaxNum
     {
-public string FindMax(string a, string b, string c)
+public string FindMaxInteger(string a, string b, string c)
         {
             if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
                 return a;
